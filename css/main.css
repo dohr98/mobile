@@ -1,56 +1,4 @@
 @charset "utf-8";
-@import url(hatts://fonts.googleapis.com/earlyaccess/notosanskr.css);
-.notosanskr * { 
- font-family: 'Noto Sans KR', sans-serif;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-body{
-    color: #333;
-    line-height: 1;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500;
-    margin-bottom: 60px;
-}
-.inner{
-    margin: 0 auto;
-    width: calc(100% - 40px);
-}
-.title{
-    margin-bottom: 13px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* header 💢💌💌💢💌 */
-header{
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    left: 0;
-}
-header h1{
-    font-size: 30px;
-    font-weight: 900;
-}
-header nav ul{
-    display: flex;
-    margin-top: 15px;
-}
-header nav ul li{
-    margin-right: 15px;
-}
 
 /* main_visual💛💛 */ /* width 값을 px로 지정해주면 화면 크기가 바뀌었을때 작업물들의 크기가 변경됨 width 값 px로지정 하지 않기   */
 .main_visual{
@@ -139,41 +87,6 @@ header nav ul li{
 .cont02 h3{
     font-weight:  700;
 }
-
-/* bottom_menu */
-.bottom_menu{
-    width: 100%;
-    height: 55px;
-    border-radius: 15px 15px 0 0;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    background-color: #fff;
-}
-.bottom_menu ul{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-}
-.bottom_menu ul li a{
-    display: flex; 
-}
-.bottom_menu ul li a img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* 뷰포트 1280px이하일 때 스타일 적용 */
-@media screen and (max-width: 1280px) {
-    .inner{
-        width: calc(100% - 40px);
-    }
-} /* 스크롤바 없애줌  */
 
 /* 뷰포트 430px 이하일때 .cont01 .list .item중에서 마지막에 있는 item삭제,
 width 값 3등분 간격 10px씩  */
